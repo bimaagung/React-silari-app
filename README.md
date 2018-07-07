@@ -1,2 +1,2 @@
 # silari-app
-Silari
+Silari Apps
