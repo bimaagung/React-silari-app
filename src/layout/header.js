@@ -27,21 +27,9 @@ export default class HeaderNav extends Component {
                             <Input icon='search' size='large' placeholder='Search...' />
                         </Menu.Item>
                     </Menu.Menu>
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <Button color='blue'>Fungsionaris</Button>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Button color='olive'>PTI</Button>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Button color='red'>Robotik</Button>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Button primary>Sign up</Button>
-                        </Menu.Item>
-                    </Menu.Menu>
+               
                 </Menu>
+                {/*
                 <div style={centerSearch}>
                 <Segment style={divSearch}>
                     <Form>
@@ -59,10 +47,11 @@ export default class HeaderNav extends Component {
                             <Form.Checkbox label='Anggota PTI' width={4} />
                         </Form.Group>
 
-                        {/* <Button type='submit'>Submit</Button> */}
+                         <Button type='submit'>Submit</Button> 
                     </Form>
                 </Segment>
                 </div>
+                */}
             </div>
 
         )
