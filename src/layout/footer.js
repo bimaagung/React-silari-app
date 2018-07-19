@@ -1,8 +1,10 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
 
-const Footer = () => 
-    <Segment inverted>Otet :)
+const Footer = () =>
+    <div>
+    <Segment >Otet :)
     </Segment>
+    </div>
 
 export default Footer

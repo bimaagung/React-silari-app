@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Input, Menu, Button, Header, Segment, Form } from 'semantic-ui-react'
+import { Input, Menu, Dropdown, Icon, Button } from 'semantic-ui-react'
+
 
 
 const divSearch = {
@@ -12,23 +13,47 @@ const centerSearch = {
     alignItems: 'center'
 }
 
+const trigger = (
+    <span>
+        <Icon disabled name='block layout' size='large' color='white'/>
+    </span>
+)
+
+const options = [
+    { key: 'user', text: 'Account', icon: 'user' },
+    { key: 'settings', text: 'Settings', icon: 'settings' },
+    { key: 'sign-out', text: 'Sign Out', icon: 'sign out' },
+]
+
+const colorMenu = {
+    backgroundColor:'rgb(242, 242, 242)'
+}
+
+
 export default class HeaderNav extends Component {
+
     render() {
         return (
             <div>
-                <Menu stackable>
+                <Menu style={colorMenu}>
                     <Menu.Menu position='left'>
                         <Menu.Item>
-                            <h3>Silari [ Sistem Alumni Riptek ]</h3>
+                            <h3>SILARI</h3>
                         </Menu.Item>
                     </Menu.Menu>
-                    <Menu.Menu position='center'>
+                    <Menu.Menu position='right'>
                         <Menu.Item>
-                            <Input icon='search' size='large' placeholder='Search...' />
+                            <Input  action={{ color: 'blue', labelPosition: 'right', icon: 'search', content: 'Cari' }} size='small' placeholder='Search...' />
+                        </Menu.Item>
+                        <Menu.Item>
+                            <Dropdown trigger={trigger} options={options} pointing='top right' icon={null} />
                         </Menu.Item>
                     </Menu.Menu>
-               
+
                 </Menu>
+
+
+
                 {/*
                 <div style={centerSearch}>
                 <Segment style={divSearch}>

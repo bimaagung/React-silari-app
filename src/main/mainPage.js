@@ -22,9 +22,11 @@ const extra = (
 export default () =>
 <div style={mainPage}>
     <div style={mainContent}>
-    <Segment padded>
-    <Label size='large' color='red' attached='top left'>Pengurus Harian</Label>
-        <Card.Group itemsPerRow={6}>
+    <Segment vertical >
+    </Segment>
+    <Segment vertical >
+    <Label size='large' color='blue' attached='top left'>Pengurus Harian</Label>
+        <Card.Group itemsPerRow={7}>
              <Card
                 image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
                 header='Elliot Baker'
@@ -56,6 +58,12 @@ export default () =>
                 extra={extra}
             />
              <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+              <Card
                 image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
                 header='Elliot Baker'
                 //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
@@ -64,9 +72,9 @@ export default () =>
         </Card.Group>
         </Segment>
 
-        <Segment padded>
-    <Label size='large' color='blue' attached='top left'>Technopreneur</Label>
-        <Card.Group itemsPerRow={6}>
+        <Segment vertical>
+        <Label size='large' color='blue' attached='top left'>Technopreneur</Label>
+        <Card.Group itemsPerRow={7}>
              <Card
                 image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
                 header='Elliot Baker'
@@ -98,6 +106,60 @@ export default () =>
                 extra={extra}
             />
              <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+            <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+        </Card.Group>
+        </Segment>
+
+        <Segment vertical>
+        <Label size='large' color='blue' attached='top left'>Robotik</Label>
+        <Card.Group itemsPerRow={7}>
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+             <Card
+                image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
+                header='Elliot Baker'
+                //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                extra={extra}
+            />
+            <Card
                 image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
                 header='Elliot Baker'
                 //description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
