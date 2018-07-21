@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Input, Menu, Dropdown, Icon, Button } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Input, Menu, Dropdown, Icon, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,12 +16,12 @@ const centerSearch = {
 
 const trigger = (
     <span>
-        <Icon disabled name='block layout' size='large' color='white'/>
+        <Icon disabled name='grid layout' size='large' color='white'/>
     </span>
 )
 
 const options = [
-    { key: 'user', text: 'Account', icon: 'user' },
+    { key: 'user', text: 'User', icon: 'user' },
     { key: 'settings', text: 'Settings', icon: 'settings' },
     { key: 'sign-out', text: 'Sign Out', icon: 'sign out' },
 ]
@@ -38,7 +39,7 @@ export default class HeaderNav extends Component {
                 <Menu style={colorMenu}>
                     <Menu.Menu position='left'>
                         <Menu.Item>
-                            <h3>SILARI</h3>
+                            <h3>SILARI v.1.0</h3>
                         </Menu.Item>
                     </Menu.Menu>
                     <Menu.Menu position='right'>
@@ -46,12 +47,17 @@ export default class HeaderNav extends Component {
                             <Input  action={{ color: 'blue', labelPosition: 'right', icon: 'search', content: 'Cari' }} size='small' placeholder='Search...' />
                         </Menu.Item>
                         <Menu.Item>
-                            <Dropdown trigger={trigger} options={options} pointing='top right' icon={null} />
+                        <Dropdown icon='user' pointing='top right'>
+                            <Dropdown.Menu>
+                                <Dropdown.Item as={Link} to="/user">Profil</Dropdown.Item>
+                                <Dropdown.Item>Log Out</Dropdown.Item>
+                            </Dropdown.Menu>
+                            </Dropdown>
                         </Menu.Item>
                     </Menu.Menu>
 
                 </Menu>
-
+                
 
 
                 {/*
@@ -78,7 +84,6 @@ export default class HeaderNav extends Component {
                 </div>
                 */}
             </div>
-
         )
     }
 }

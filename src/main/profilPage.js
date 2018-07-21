@@ -1,5 +1,6 @@
 import React from "react";
-import { Form, Label, Input, Breadcrumb,  Table, Image, Grid, Segment } from 'semantic-ui-react'
+import { Form, Label, Input, Breadcrumb,  Table, Image, Grid, Segment } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const mainPage = {
     display: 'flex',
@@ -41,7 +42,7 @@ export default () =>
                     <Grid.Row>
                         <Grid.Column>
                         <Breadcrumb>
-                        <Breadcrumb.Section link>Home</Breadcrumb.Section>
+                        <Breadcrumb.Section link as={Link} to="/">Home</Breadcrumb.Section>
                         <Breadcrumb.Divider icon='right angle' />
                         <Breadcrumb.Section active>Profil</Breadcrumb.Section>
                         </Breadcrumb>
