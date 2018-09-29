@@ -3,7 +3,7 @@ import { Segment } from 'semantic-ui-react'
 
 const Footer = () =>
     <div>
-    <Segment >Otet :)
+    <Segment >Otet :) news data
     </Segment>
     </div>
 
